@@ -12,6 +12,7 @@ This program uses CMake to build it. Run these commands to build:
 
 ```
 git clone --recursive https://github.com/Roman-Port/SSQUtil
+cd SSQUtil
 mkdir build
 cd build
 cmake ..
@@ -34,11 +35,11 @@ Invoke the program with no arguments to view help. Otherwise, these are the thre
 
 Return source specifies what the status code of the program will be derived from. On error it will always be -1, otherwise the following numbers will pull from these sources:
 
-1: Game ID (usually 0)
-2: Current number of players
-3: Max players
-4: Current number of bots
-5: Current number of players minus bots
+1. Game ID (usually 0)
+2. Current number of players
+3. Max players
+4. Current number of bots
+5. Current number of players minus bots
 
 Additionally, you can dump strings to files by specifying a filename with one of these arguments:
 

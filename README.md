@@ -28,9 +28,9 @@ git submodule update --init --recursive
 
 Invoke the program with no arguments to view help. Otherwise, these are the three main options:
 
-* -h <hostname>
-* -p <port>
-* -c <return source>
+* -h [hostname]
+* -p [port]
+* -c [return source]
 
 Return source specifies what the status code of the program will be derived from. On error it will always be -1, otherwise the following numbers will pull from these sources:
 
@@ -42,14 +42,14 @@ Return source specifies what the status code of the program will be derived from
 
 Additionally, you can dump strings to files by specifying a filename with one of these arguments:
 
-* --name-file <filename> (server name)
-* --map-file <filename> (server map)
-* --folder-file <filename> (server game folder's name)
-* --game-file <filename> (server gamemode, at least for Dino D-Day)
-* --version-file <filename> (server version, seems to always be 1.0.0.0 for Dino D-Day)
-* --keywords-file <filename> (server keywords displayed in the server browser)
+* --name-file [filename] (server name)
+* --map-file [filename] (server map)
+* --folder-file [filename] (server game folder's name)
+* --game-file [filename] (server gamemode, at least for Dino D-Day)
+* --version-file [filename] (server version, seems to always be 1.0.0.0 for Dino D-Day)
+* --keywords-file [filename] (server keywords displayed in the server browser)
 
 Finally, you can change the default timeout and retries with these arguments:
 
-* -t <timeout in milliseconds>
-* -r <retry count>
+* -t [timeout in milliseconds]
+* -r [retry count]
